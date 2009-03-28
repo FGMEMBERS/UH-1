@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>tour</object-name>
+    <object-name>paloGG</object-name>
+    <object-name>paloGD</object-name>
+    <object-name>paloDG</object-name>
+    <object-name>paloDD</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/UH-1/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -7.331 </x-m>
+      <y-m>  0.505 </y-m>
+      <z-m> -0.660 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Planche de bord -->
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -7.911 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.785 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Palonnier -->
+  <!-- Pilote -->
+  <animation>
+    <type>rotate</type>
+    <object-name>paloDG</object-name>
+    <property>/controls/flight/rudder</property>
+    <factor>10</factor>
+    <center>
+      <x-m> -8.138 </x-m>
+      <y-m>  0.538 </y-m>
+      <z-m> -1.292 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>paloDD</object-name>
+    <property>/controls/flight/rudder</property>
+    <factor>-10</factor>
+    <center>
+      <x-m> -8.138 </x-m>
+      <y-m>  0.438 </y-m>
+      <z-m> -1.292 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Copilote -->
+  <animation>
+    <type>rotate</type>
+    <object-name>paloGG</object-name>
+    <property>/controls/flight/rudder</property>
+    <factor>10</factor>
+    <center>
+      <x-m> -8.138 </x-m>
+      <y-m> -0.538 </y-m>
+      <z-m> -1.292 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>paloGD</object-name>
+    <property>/controls/flight/rudder</property>
+    <factor>-10</factor>
+    <center>
+      <x-m> -8.138 </x-m>
+      <y-m> -0.438 </y-m>
+      <z-m> -1.292 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

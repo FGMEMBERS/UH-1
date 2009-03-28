@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>uh1.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/UH-1/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fuselage</object-name>
+    <object-name>antennes</object-name>
+    <object-name>moteur</object-name>
+    <object-name>echappe</object-name>
+    <object-name>aileron</object-name>
+    <object-name>air</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>vitres</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass_shader.png</texture>
+    <object-name>vitres</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>antennes</object-name>
+    <object-name>moteur</object-name>
+    <object-name>echappe</object-name>
+    <object-name>aileron</object-name>
+    <object-name>air</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
+  </animation>
+
+  <!-- Interieur -->
+  <model>
+    <path>Aircraft/UH-1/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+      <roll-deg>    0.0 </roll-deg>
+      <pitch-deg>   0.0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Rotor principale -->
+  <model>
+    <path>Aircraft/UH-1/Models/MainRotor/mainrotor.xml</path>
+    <offsets>
+      <x-m> -4.920 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.233 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>   -4.000 </pitch-deg>
+      <heading-deg>  0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Rotor de queue -->
+  <model>
+    <path>Aircraft/UH-1/Models/TailRotor/tailrotor.xml</path>
+    <offsets>
+      <x-m>  4.026 </x-m>
+      <y-m> -0.473 </y-m>
+      <z-m>  1.386 </z-m>
+      <roll-deg>   90.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/UH-1/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> -2.685 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.655 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m> 3.629 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.168 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m> -6.075 </x-m>
+      <y-m> -1.178 </y-m>
+      <z-m>  0.087 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -6.075 </x-m>
+      <y-m>  1.178 </y-m>
+      <z-m>  0.087 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/UH-1/Models/lights/WhiteLight.xml</path>
+    <offsets>
+      <x-m> -8.641 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.356 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
