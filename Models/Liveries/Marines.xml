@@ -5,8 +5,8 @@
   <sim>
     <model>
       <livery>
-        <name type="string">tigre</name>
-        <texture>Liveries/tigre.png</texture>
+        <name type="string">Marines</name>
+        <texture>Liveries/Marines.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

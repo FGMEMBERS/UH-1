@@ -1,5 +1,9 @@
+LUFTWAFFE
+
+MARINES
+
 NAVY
 
-These liveries were made by : Brett Harrison 2009
+These liveries were made by : Todd MAROIS 2009
 
 Thanks to him.
