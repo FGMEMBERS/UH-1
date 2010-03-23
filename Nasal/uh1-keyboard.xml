@@ -7,27 +7,66 @@
     <desc>Surprise</desc>
     <binding>
      <command>nasal</command>
-     <script>uh1.doorsystem.otherexport();</script>
+     <script>uh1.theRightMusic.toggle();</script>
     </binding>
   </key>
-
-  <key n="68">
-    <name>D</name>
-    <desc>Passenger door</desc>
+  
+  <!-- gun trigger key, codes -->  
+  <key n="127">
+    <name>Delete </name>
+    <desc>Gun Trigger</desc> 
     <binding>
-      <command>nasal</command>
-      <script>uh1.doorsystem.passengerexport();</script>
+     <command>property-assign</command>
+     <property>controls/armament/trigger</property>
+     <value>true</value>
     </binding>
+    <mod-up>
+     <binding>
+      <command>property-assign</command>
+      <property>controls/armament/trigger</property>
+      <value>false</value>
+     </binding> 
+    </mod-up>
   </key>
+  <!-- end of gun trigger key, codes -->
 
-  <key n="100">
-    <name>d</name>
-    <desc>Crew door</desc>
+  <!-- port side rocket trigger key, codes -->  
+  <key n="91">
+    <name>[</name>
+    <desc>portside rocket Trigger</desc> 
     <binding>
-      <command>nasal</command>
-      <script>uh1.doorsystem.crewexport();</script>
+     <command>property-assign</command>
+     <property>controls/armament/trigger1</property>
+     <value>true</value>
     </binding>
+    <mod-up>
+     <binding>
+      <command>property-assign</command>
+      <property>controls/armament/trigger1</property>
+      <value>false</value>
+     </binding> 
+    </mod-up>
+  </key> 
+  <!-- end of port side rocket trigger key, codes -->
+
+  <!-- starboard side rocket trigger key, codes -->  
+  <key n="93">
+    <name>]</name>
+    <desc>starboard rocket Trigger</desc> 
+    <binding>
+     <command>property-assign</command>
+     <property>controls/armament/trigger2</property>
+     <value>true</value>
+    </binding>
+    <mod-up>
+     <binding>
+      <command>property-assign</command>
+      <property>controls/armament/trigger2</property>
+      <value>false</value>
+     </binding> 
+    </mod-up>
   </key>
+  <!-- end of starboard side rocket trigger key, codes -->
 
   <key n="78">
     <name>N</name>

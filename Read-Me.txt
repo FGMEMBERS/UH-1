@@ -29,6 +29,7 @@ Some useful keys:
 Thanks
 ======
 Maik JUSTUS for the new FDM
+Heiko Schulz for the big change in 3D and FDM
 
 ===============
 BARANGER Emmanuel
@@ -63,6 +64,7 @@ Quelques touches utiles :
 Remerciements
 =============
 Maik JUSTUS pour le nouveau FDM
+Heiko Schulz pour les énormes changement sur la 3D et le FDM
 
 ===============
 BARANGER Emmanuel

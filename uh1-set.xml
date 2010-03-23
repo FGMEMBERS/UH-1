@@ -12,7 +12,7 @@ UH 1 simulation config.
   <sim include="Nasal/views.xml">
 
     <description>Bell UH 1 "Huey"</description>
-    <author>BARANGER Emmanuel (3D) Maik Justus (FDM, sound)</author>
+    <author>BARANGER Emmanuel (FMD/3D), Heiko Schulz (3D/FDM), Simon Lister (3D), Maik Justus (FDM, sound)</author>
     <status>alpha</status>
     <license>GPL v2</license>
 
@@ -29,7 +29,8 @@ UH 1 simulation config.
     </sound>
 
     <model>
-      <path archive="y">Aircraft/UH-1/Models/uh1.xml</path>
+      <path archive="y">Aircraft/UH-1/Models/uh1.xml</path>    
+      <hide-guns type="bool">false</hide-guns>
       <uh1>
         <state type="int">0</state>
         <engine type="float">0.0</engine>
@@ -37,6 +38,11 @@ UH 1 simulation config.
       </uh1>
     </model>
 
+    <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/UH-1/Models/guns/UH-1submodels.xml</path>
+    </submodels>
+  
     <weight n="0">
       <name>Pilot</name>
       <weight-lb>180</weight-lb>
@@ -76,13 +82,18 @@ UH 1 simulation config.
     <help>
       <title>Bell UH 1 "Huey"</title>
       <line></line>
+      <line>To open and close the doors just click on it!</line>
       <key>
-        <name>d</name>
-        <desc>Open/Close crew door</desc>
+        <name>Delete</name>
+        <desc>Fire the miniguns</desc>
       </key>
       <key>
-        <name>D</name>
-        <desc>Open/Close passenger door</desc>
+        <name>[</name>
+        <desc>port side Fire rockets</desc>
+      </key>
+      <key>
+        <name>]</name>
+        <desc>starboard side Fire rockets</desc>
       </key>
       <key>
         <name>N</name>
@@ -109,7 +120,7 @@ UH 1 simulation config.
     <menubar include="Dialogs/uh1-menu.xml"/>
 
   </sim>
-
+  
   <controls>
     <engines>
       <engine n="0">
@@ -123,13 +134,18 @@ UH 1 simulation config.
       <reltarget>1</reltarget>
       <maxreltorque>1</maxreltorque>
     </rotor>
+    <armament>
+      <trigger>0</trigger>
+      <trigger1>0</trigger1>
+      <trigger2>0</trigger2>
+    </armament>
   </controls>
 
   <instrumentation>
     <gsdi>
       <serviceable type="bool">true</serviceable>
-        <enabled type="bool">true</enabled>
-      </gsdi>
+      <enabled type="bool">true</enabled>
+    </gsdi>
   </instrumentation>
 
   <input>
@@ -163,9 +179,12 @@ UH 1 simulation config.
     <uh1>
       <file>Aircraft/UH-1/Nasal/doors.nas</file>
       <file>Aircraft/UH-1/Nasal/uh1.nas</file>
-      <file>Aircraft/UH-1/Nasal/liveries.nas</file>
       <file>Aircraft/UH-1/Nasal/light.nas</file>
+      <file>Aircraft/UH-1/Nasal/liveries.nas</file>
     </uh1>
+    <guns>
+      <file>Aircraft/UH-1/Nasal/guns.nas</file>
+    </guns>
   </nasal>
 
 </PropertyList>

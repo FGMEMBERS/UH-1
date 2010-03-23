@@ -5,31 +5,31 @@
   <sim>
     <model>
       <livery>
-        <name type="string">Default</name>
+        <name type="string">Default (Tigre)</name>
         <texture>texture.png</texture>
-<!--
+	
         <diffuse>
-          <red>   0.5 </red>
-          <green> 0.5 </green>
-          <blue>  0.5 </blue>
+          <red>   1.0 </red>
+          <green> 1.0 </green>
+          <blue>  1.0 </blue>
         </diffuse>
-
+ 
         <ambient>
-          <red>   0.5 </red>
-          <green> 0.5 </green>
-          <blue>  0.5 </blue>
+          <red>   1.0 </red>
+          <green> 1.0 </green>
+          <blue>  1.0 </blue>
         </ambient>
--->
+
         <specular>
-          <red>   0.3 </red>
-          <green> 0.3 </green>
-          <blue>  0.3 </blue>
+          <red>   1.0 </red>
+          <green> 1.0 </green>
+          <blue>  1.0 </blue>
         </specular>
 
         <emission>
-          <red>   0.2 </red>
-          <green> 0.2 </green>
-          <blue>  0.2 </blue>
+          <red>   0.0 </red>
+          <green> 0.0 </green>
+          <blue>  0.0 </blue>
         </emission>
 <!--
         <transparency>

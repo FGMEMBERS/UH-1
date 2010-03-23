@@ -19,8 +19,8 @@
       <volume>
         <factor>8</factor>
       </volume>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
+      <reference-dist>500</reference-dist>
+      <max-dist>4000</max-dist>
     </door>
 
     <engine>
@@ -36,8 +36,8 @@
       <volume>
         <factor>0.7</factor>
       </volume>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
+      <reference-dist>500</reference-dist>
+      <max-dist>4000</max-dist>
     </engine>
 
     <engine>
@@ -74,8 +74,8 @@
         <y> 0 </y>
         <z> 0.4 </z>
       </position>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
+      <reference-dist>500</reference-dist>
+      <max-dist>4000</max-dist>
     </engine>
 
         <!-- outside -->
@@ -115,8 +115,8 @@
                 <y> 0 </y>
                 <z> 1.5 </z>
             </position>
-            <reference-dist>100</reference-dist>
-            <max-dist>1000</max-dist>
+            <reference-dist>500</reference-dist>
+            <max-dist>5000</max-dist>
         </rotor>
 
         <rotor>
@@ -163,8 +163,8 @@
                 <outer-angle>220</outer-angle>
                 <outer-gain>0.1</outer-gain>
             </orientation>
-            <reference-dist>100</reference-dist>
-            <max-dist>1000</max-dist>
+            <reference-dist>500</reference-dist>
+            <max-dist>5000</max-dist>
         </rotor>
 
         <engine>
@@ -215,8 +215,8 @@
                 <outer-angle>80</outer-angle>
                 <outer-gain>0.2</outer-gain>
             </orientation>
-            <reference-dist>100</reference-dist>
-            <max-dist>1000</max-dist>
+            <reference-dist>500</reference-dist>
+            <max-dist>4000</max-dist>
         </engine>
 
         <rotor>
@@ -247,7 +247,7 @@
                 <offset>-0.0</offset>
                 <max>2.5</max>
             </pitch>
-            <reference-dist>100</reference-dist>
+            <reference-dist>500</reference-dist>
             <max-dist>1000</max-dist>
         </rotor>
 
@@ -277,8 +277,8 @@
                 <offset>0</offset>
                 <max>2.5</max>
             </pitch>
-            <reference-dist>100</reference-dist>
-            <max-dist>1000</max-dist>
+            <reference-dist>500</reference-dist>
+            <max-dist>5000</max-dist>
         </rotor>
 
         <overspeed>
@@ -288,7 +288,7 @@
             <condition>
                 <greater-than>
                     <property>velocities/airspeed-kt</property>
-                    <value>146</value>
+                    <value>110</value>
                 </greater-than>
             </condition>
             <volume>
@@ -359,7 +359,7 @@
             <pitch>
                 <factor>0.1</factor>
             </pitch>
-            <reference-dist>100</reference-dist>
+            <reference-dist>500</reference-dist>
             <max-dist>1000</max-dist>
         </crash>
 
