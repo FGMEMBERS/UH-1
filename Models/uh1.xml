@@ -57,7 +57,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitres</object-name>
     <object-name>frontdoorglasleft</object-name>
     <object-name>frontdoorglasright</object-name>

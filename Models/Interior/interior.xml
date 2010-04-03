@@ -33,7 +33,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>shader.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitresint</object-name>
     <object-name>frontdoorglasleftint</object-name>
     <object-name>frontdoorglasrighint</object-name>
