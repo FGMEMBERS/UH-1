@@ -29,7 +29,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>glass.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitre</object-name>
   </animation>
 
@@ -43,22 +43,11 @@
     <object-name>ElapsedMinutesHand</object-name>
     <object-name>SecondHand</object-name> 
     <emission>
-      <red>   0.028 </red>
-      <green> 0.014 </green>
-      <blue>  0.007 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
-  </animation>
-
-  <animation>
-    <type>select</type>
-    <object-name>clock</object-name>
-    <condition>
-      <equals>
-        <property>sim/current-view/name</property>
-        <value>Cockpit View</value>
-      </equals>
-    </condition>
   </animation>
 
   <animation> 

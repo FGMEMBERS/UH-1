@@ -29,7 +29,7 @@ UH 1 simulation config.
     </sound>
 
     <model>
-      <path archive="y">Aircraft/UH-1/Models/uh1.xml</path>    
+      <path archive="y">Aircraft/UH-1/Models/uh1.xml</path>
       <hide-guns type="bool">false</hide-guns>
       <uh1>
         <state type="int">0</state>
@@ -38,11 +38,11 @@ UH 1 simulation config.
       </uh1>
     </model>
 
-    <submodels> 
+    <submodels>
       <serviceable type="bool">true</serviceable>
       <path>Aircraft/UH-1/Models/guns/UH-1submodels.xml</path>
     </submodels>
-  
+
     <weight n="0">
       <name>Pilot</name>
       <weight-lb>180</weight-lb>
@@ -120,7 +120,7 @@ UH 1 simulation config.
     <menubar include="Dialogs/uh1-menu.xml"/>
 
   </sim>
-  
+
   <controls>
     <engines>
       <engine n="0">
@@ -182,6 +182,9 @@ UH 1 simulation config.
       <file>Aircraft/UH-1/Nasal/light.nas</file>
       <file>Aircraft/UH-1/Nasal/liveries.nas</file>
     </uh1>
+    <chronograph>
+      <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/chronograph/chronograph.nas</path>
+    </chronograph>
     <guns>
       <file>Aircraft/UH-1/Nasal/guns.nas</file>
     </guns>

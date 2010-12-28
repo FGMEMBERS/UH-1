@@ -11,7 +11,7 @@ This is a Model of a Bell "Huey" UH-1 Helicopter for FlightGear 1.9.1 and later.
 The fdm is based on real free available datas and measurements of the NASA, using a Bell UH-1H.
 The fdm was created with this datas by Maik Justus and tested by Todd Marois, Ex-US-Navy Pilot on a UH-1N.
 The sound is from a real UH-1D, recorded by Maik Justus.
-The 3d Model was created by Emmanuel Barranger and Heiko Schulz, using 3-view drawings out of the Flight Manual, published on http://www.huey.co.uk.
+The 3d Model was created by Emmanuel Baranger and Heiko Schulz, using 3-view drawings out of the Flight Manual, published on http://www.huey.co.uk.
 #################
 Known Issues:
 -bad engine simulation- no autorotation possible (clutch simulation missing!)
