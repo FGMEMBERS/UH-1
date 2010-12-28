@@ -12,7 +12,7 @@
   <!-- gun 1, codes -->
   <submodel>
     <name>gun1-tracer</name>
-    <model>Aircraft/UH-1/Models/guns/tracer.xml</model>
+    <model>Aircraft/UH-1/Models/Effects/guns/tracer.xml</model>
     <trigger>/controls/armament/gun-fire</trigger>
     <speed>2750.0</speed>
     <repeat>true</repeat>
@@ -51,14 +51,14 @@
     <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
     <impact>true</impact>
     <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/UH-1/Models/guns/bullet-submodel.xml</submodel-path>
+    <submodel-path>Aircraft/UH-1/Models/Effects/guns/bullet-submodel.xml</submodel-path>
   </submodel>
   <!-- END of gun 1, codes -->
 
   <!-- gun 2, codes -->
   <submodel>
     <name>gun2-tracer</name>
-    <model>Aircraft/UH-1/Models/guns/tracer.xml</model>
+    <model>Aircraft/UH-1/Models/Effects/guns/tracer.xml</model>
     <trigger>/controls/armament/gun-fire</trigger>
     <speed>2750.0</speed>
     <repeat>true</repeat>
@@ -97,14 +97,14 @@
     <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
     <impact>true</impact>
     <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
-    <submodel-path>Aircraft/UH-1/Models/guns/bullet-submodel.xml</submodel-path>
+    <submodel-path>Aircraft/UH-1/Models/Effects/guns/bullet-submodel.xml</submodel-path>
   </submodel>
   <!-- END of gun 2, codes -->
 
   <!-- Smoke From Guns -->
   <submodel> 
     <name>gun1-smoke</name>
-    <model>Aircraft/UH-1/Models/guns/smoke.xml</model>
+    <model>Aircraft/UH-1/Models/Effects/guns/smoke.xml</model>
     <trigger>controls/armament/gun-fire</trigger>
     <speed>10</speed>
     <repeat>true</repeat>
@@ -123,7 +123,7 @@
 
   <submodel> 
     <name>gun2-smoke</name>
-    <model>Aircraft/UH-1/Models/guns/smoke.xml</model>
+    <model>Aircraft/UH-1/Models/Effects/guns/smoke.xml</model>
     <trigger>controls/armament/gun-fire</trigger>
     <speed>10</speed>
     <repeat>true</repeat>
@@ -143,7 +143,7 @@
 
   <!-- rocket codes -->
   <rocket>
-    <model>Aircraft/UH-1/Models/rocket/wp.xml</model>
+    <model>Aircraft/UH-1/Models/Effects/rocket/wp.xml</model>
     <x>-4.753</x>
     <speed>820</speed>
     <pitch>0</pitch><!--2?-->
@@ -152,7 +152,7 @@
     <eda>0.000001</eda>
     <life>10</life>
     <impact>/sim/ai/aircraft/impact/rocket</impact>
-    <submodel-path>Aircraft/UH-1/Models/rocket/rocket-submodels.xml</submodel-path>
+    <submodel-path>Aircraft/UH-1/Models/Effects/rocket/rocket-submodels.xml</submodel-path>
   </rocket>
   
   <submodel>
@@ -205,3 +205,4 @@
   <!--end of rocket codes -->
   
 </PropertyList>
+

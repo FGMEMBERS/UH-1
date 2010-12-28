@@ -7,68 +7,56 @@
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/UH-1/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
     </load>
+
     <unload>
       livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
     </unload>
   </nasal>
 
   <animation>
+    <!-- Objets opaques -->
     <object-name>fuselage</object-name>
-    <object-name>LHwiper</object-name>
-    <object-name>RHwiper</object-name>
     <object-name>enginecowl</object-name>
-    <object-name>skid</object-name>
-    <object-name>frontdoorright</object-name>
+    <object-name>enginecowl2</object-name>
+    <object-name>elevatortrim</object-name>
     <object-name>frontdoorleft</object-name>
+    <object-name>frontdoorright</object-name>
     <object-name>sidedoorleft</object-name>
     <object-name>sidedoorright</object-name>
-    <object-name>slidedoorright</object-name>
     <object-name>slidedoorleft</object-name>
+    <object-name>slidedoorright</object-name>
+    <object-name>wirecutter_down</object-name>
+    <object-name>wirecutter_up</object-name>
+    <object-name>air</object-name>
+    <object-name>RHwiper</object-name>
+    <object-name>LHwiper</object-name>
+    <object-name>skid</object-name>
     <object-name>leftside</object-name>
-    <object-name>leftslide</object-name>
     <object-name>rightside</object-name>
+    <object-name>leftslide</object-name>
     <object-name>rightslide</object-name>
     <object-name>frontcharnieres</object-name>
     <object-name>charnieres</object-name>
-    <object-name>skid</object-name>
-    <object-name>enginecowl</object-name>
-    <object-name>enginecowl2</object-name>
     <object-name>enginecowl3</object-name>
     <object-name>enginecowl4</object-name>
-    <object-name>elevatortrim</object-name>
-    <object-name>air</object-name>
-    <object-name>taillight</object-name>
-    <object-name>wirecutter_down</object-name>
-    <object-name>wirecutter_up</object-name>
-    <object-name>noze</object-name>
 
-    <object-name>vitres</object-name>
-    <object-name>frontdoorglasleft</object-name>
-    <object-name>frontdoorglasright</object-name>
-    <object-name>sidedoorglasleft</object-name>
-    <object-name>sidedoorglasright</object-name>
-    <object-name>slidedoorglasleft</object-name>
-    <object-name>slidedoorglasright</object-name>
-    <object-name>beacon</object-name>
-    <object-name>taillighttrs</object-name>
-  </animation>
+    <object-name>trous</object-name>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitres</object-name>
-    <object-name>frontdoorglasleft</object-name>
-    <object-name>frontdoorglasright</object-name>
-    <object-name>sidedoorglasleft</object-name>
-    <object-name>sidedoorglasright</object-name>
-    <object-name>slidedoorglasleft</object-name>
-    <object-name>slidedoorglasright</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
+    <!-- Objets transparents -->
     <object-name>vitres</object-name>
     <object-name>frontdoorglasleft</object-name>
     <object-name>frontdoorglasright</object-name>
@@ -83,33 +71,31 @@
   <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
-    <object-name>LHwiper</object-name>
-    <object-name>RHwiper</object-name>
     <object-name>enginecowl</object-name>
-    <object-name>skid</object-name>
-    <object-name>frontdoorright</object-name>
+    <object-name>enginecowl2</object-name>
+    <object-name>elevatortrim</object-name>
     <object-name>frontdoorleft</object-name>
+    <object-name>frontdoorright</object-name>
     <object-name>sidedoorleft</object-name>
     <object-name>sidedoorright</object-name>
-    <object-name>slidedoorright</object-name>
     <object-name>slidedoorleft</object-name>
+    <object-name>slidedoorright</object-name>
+    <object-name>wirecutter_down</object-name>
+    <object-name>wirecutter_up</object-name>
+    <object-name>air</object-name>
+    <object-name>RHwiper</object-name>
+    <object-name>LHwiper</object-name>
+    <object-name>skid</object-name>
     <object-name>leftside</object-name>
-    <object-name>leftslide</object-name>
     <object-name>rightside</object-name>
+    <object-name>leftslide</object-name>
     <object-name>rightslide</object-name>
     <object-name>frontcharnieres</object-name>
     <object-name>charnieres</object-name>
-    <object-name>skid</object-name>
-    <object-name>enginecowl</object-name>
-    <object-name>enginecowl2</object-name>
     <object-name>enginecowl3</object-name>
     <object-name>enginecowl4</object-name>
-    <object-name>elevatortrim</object-name>
-    <object-name>air</object-name>
-    <object-name>taillight</object-name>
-    <object-name>wirecutter_down</object-name>
-    <object-name>wirecutter_up</object-name>
-    <object-name>noze</object-name>
+
+    <object-name>trous</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -145,6 +131,60 @@
     -->
   </animation>
   
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>enginecowl</object-name>
+    <object-name>enginecowl2</object-name>
+    <object-name>elevatortrim</object-name>
+    <object-name>frontdoorleft</object-name>
+    <object-name>frontdoorright</object-name>
+    <object-name>sidedoorleft</object-name>
+    <object-name>sidedoorright</object-name>
+    <object-name>slidedoorleft</object-name>
+    <object-name>slidedoorright</object-name>
+    <object-name>wirecutter_down</object-name>
+    <object-name>wirecutter_up</object-name>
+    <object-name>air</object-name>
+    <object-name>RHwiper</object-name>
+    <object-name>LHwiper</object-name>
+    <object-name>skid</object-name>
+    <object-name>leftside</object-name>
+    <object-name>rightside</object-name>
+    <object-name>leftslide</object-name>
+    <object-name>rightslide</object-name>
+    <object-name>frontcharnieres</object-name>
+    <object-name>charnieres</object-name>
+    <object-name>enginecowl3</object-name>
+    <object-name>enginecowl4</object-name>
+  </effect>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitres</object-name>
+    <object-name>frontdoorglasleft</object-name>
+    <object-name>frontdoorglasright</object-name>
+    <object-name>sidedoorglasleft</object-name>
+    <object-name>sidedoorglasright</object-name>
+    <object-name>slidedoorglasleft</object-name>
+    <object-name>slidedoorglasright</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+    <object-name>frontdoorglasleft</object-name>
+    <object-name>frontdoorglasright</object-name>
+    <object-name>sidedoorglasleft</object-name>
+    <object-name>sidedoorglasright</object-name>
+    <object-name>slidedoorglasleft</object-name>
+    <object-name>slidedoorglasright</object-name>
+    <object-name>beacon</object-name>
+    <object-name>taillighttrs</object-name>
+  </animation>
+
   <!-- Interieur -->
   <model>
     <path>Aircraft/UH-1/Models/Interior/interior.xml</path>
@@ -160,7 +200,7 @@
 
   <!-- Guns -->
   <model>
-    <path>Aircraft/UH-1/Models/guns/guns.xml</path>
+    <path>Aircraft/UH-1/Models/Effects/guns/guns.xml</path>
     <offsets>
       <x-m> -4.162 </x-m>
       <y-m>  0.000 </y-m>
@@ -291,7 +331,7 @@
   <animation>
     <type>rotate</type>
     <object-name>LeftFrontDoor</object-name>
-    <property>/sim/model/door-positions/leftFrontDoor/position-norm</property>
+    <property>sim/model/door-positions/leftFrontDoor/position-norm</property>
     <factor> -80 </factor>
     <axis>
       <x1-m> -7.284 </x1-m>
@@ -312,7 +352,7 @@
   <animation>
     <type>rotate</type>
     <object-name>RightFrontDoor</object-name>
-    <property>/sim/model/door-positions/rightFrontDoor/position-norm</property>
+    <property>sim/model/door-positions/rightFrontDoor/position-norm</property>
     <factor> 80 </factor>
     <axis>
       <x1-m> -7.284 </x1-m>
@@ -334,7 +374,7 @@
   <animation>
     <type>rotate</type>
     <object-name>LeftDoor</object-name>
-    <property>/sim/model/door-positions/leftSideDoor/position-norm</property>
+    <property>sim/model/door-positions/leftSideDoor/position-norm</property>
     <factor> -80 </factor>
     <center>
       <x-m> -6.107 </x-m>
@@ -358,7 +398,7 @@
   <animation>
     <type>rotate</type>
     <object-name>RightDoor</object-name>
-    <property>/sim/model/door-positions/rightSideDoor/position-norm</property>
+    <property>sim/model/door-positions/rightSideDoor/position-norm</property>
     <factor> 80 </factor>
     <center>
       <x-m> -6.107 </x-m>
@@ -382,7 +422,7 @@
   <animation>
     <type>translate</type>
     <object-name>LeftSlide</object-name>
-    <property>/sim/model/door-positions/leftSlideDoor/position-norm</property>
+    <property>sim/model/door-positions/leftSlideDoor/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.000 </dep></entry>
       <entry><ind> 0.1 </ind><dep> -0.075 </dep></entry>
@@ -398,7 +438,7 @@
   <animation>
     <type>rotate</type>
     <object-name>LeftSlide</object-name>
-    <property>/sim/model/door-positions/leftSlideDoor/position-norm</property>
+    <property>sim/model/door-positions/leftSlideDoor/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
       <entry><ind> 0.1 </ind><dep>  0 </dep></entry>
@@ -426,7 +466,7 @@
   <animation>
     <type>translate</type>
     <object-name>RightSlide</object-name>
-    <property>/sim/model/door-positions/rightSlideDoor/position-norm</property>
+    <property>sim/model/door-positions/rightSlideDoor/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep> 0.000 </dep></entry>
       <entry><ind> 0.1 </ind><dep> 0.075 </dep></entry>
@@ -442,7 +482,7 @@
   <animation>
     <type>rotate</type>
     <object-name>RightSlide</object-name>
-    <property>/sim/model/door-positions/rightSlideDoor/position-norm</property>
+    <property>sim/model/door-positions/rightSlideDoor/position-norm</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.1 </ind><dep>   0 </dep></entry>
