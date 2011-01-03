@@ -8,6 +8,8 @@ Finland
 
 IDF
 
+Swiss
+
 These liveries were made by : Todd MAROIS 2009/2010
 
 Thanks to him.
@@ -21,5 +23,3 @@ SAR 46
 These liveries were made by : Heiko Schulz 2010
 
 Thanks to him.
-
-
