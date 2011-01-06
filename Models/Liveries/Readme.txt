@@ -10,6 +10,8 @@ IDF
 
 Swiss
 
+France
+
 These liveries were made by : Todd MAROIS 2009/2010
 
 Thanks to him.
