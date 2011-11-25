@@ -185,16 +185,28 @@
     <object-name>taillighttrs</object-name>
   </animation>
 
+  <!-- Une ombre pour OSG -->
+  <model>
+    <path>Aircraft/UH-1/Models/shadow.xml</path>
+    <offsets>
+      <x-m> -1.299 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.600 </z-m>
+    </offsets>
+  </model>
+
   <!-- Interieur -->
   <model>
     <path>Aircraft/UH-1/Models/Interior/interior.xml</path>
+  </model>
+
+  <!-- Sprayer -->
+  <model>
+    <path>Aircraft/UH-1/Models/Sprayer/sprayer.xml</path>
     <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
+      <x-m> -6.053 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.705 </z-m>
     </offsets>
   </model>
 
@@ -205,9 +217,6 @@
       <x-m> -4.162 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -1.490 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -218,9 +227,6 @@
       <x-m> -4.767 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  1.000 </z-m>
-      <roll-deg>     0 </roll-deg>
-      <pitch-deg>   -4 </pitch-deg>
-      <heading-deg>  0 </heading-deg>
     </offsets>
   </model>
 
@@ -232,8 +238,6 @@
       <y-m> -0.473 </y-m>
       <z-m>  1.555 </z-m>
       <roll-deg>   90 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 

@@ -14,25 +14,15 @@
   <model>
     <name>Blade1</name>
     <path>Aircraft/UH-1/Models/TailRotor/blade.xml</path>
-    <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.000 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
-    </offsets>
   </model>
 
   <model>
     <name>Blade2</name>
     <path>Aircraft/UH-1/Models/TailRotor/blade.xml</path>
     <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.000 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
       <heading-deg> 180.000 </heading-deg>
     </offsets>
   </model>
@@ -44,9 +34,9 @@
     <property>/rotors/tail/blade/incidence-deg</property>
     <factor>0.002</factor>
     <axis>
-      <x>  0.000 </x>
-      <y>  0.000 </y>
-      <z>  1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
@@ -63,15 +53,10 @@
     <type>rotate</type>
     <object-name>rotorcomplet</object-name>
     <property>/rotors/tail/blade[0]/position-deg</property>
-    <center>
-       <x-m> 0.000 </x-m>
-       <y-m> 0.000 </y-m>
-       <z-m> 0.000 </z-m>
-    </center>
     <axis>
-      <x>  0.000 </x>
-      <y>  0.000 </y>
-      <z>  1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
   
@@ -79,18 +64,12 @@
     <type>spin</type>
     <object-name>rotorcomplet</object-name>
     <property>rotors/tail/rpm</property>
-    <center>
-       <x-m> 0.000 </x-m>
-       <y-m> 0.000 </y-m>
-       <z-m> 0.000 </z-m>
-    </center>
     <axis>
-      <x>  0.000 </x>
-      <y>  0.000 </y>
-      <z>  1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
-  
 
 </PropertyList>
 

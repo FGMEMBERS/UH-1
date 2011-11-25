@@ -11,6 +11,23 @@
     </binding>
   </key>
   
+  <key n="101">
+    <name>e</name>
+    <desc>Sprayer</desc>
+    <binding>
+     <command>property-assign</command>
+     <property>controls/armament/trigger</property>
+     <value>true</value>
+    </binding>
+    <mod-up>
+     <binding>
+      <command>property-assign</command>
+      <property>controls/armament/trigger</property>
+      <value>false</value>
+     </binding> 
+    </mod-up>
+  </key>
+
   <!-- gun trigger key, codes -->  
   <key n="127">
     <name>Delete </name>

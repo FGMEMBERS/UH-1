@@ -34,9 +34,6 @@
       <x-m> 0.000 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.594 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model>
 
@@ -47,8 +44,6 @@
       <x-m> 0.000 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.594 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
       <heading-deg> 180.000 </heading-deg>
     </offsets>
   </model>
@@ -71,9 +66,9 @@
        <z-m> 0.589 </z-m>
     </center>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -87,9 +82,9 @@
        <z-m> 0.589 </z-m>
     </center>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -103,9 +98,9 @@
        <z-m> 0.589 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y>-1.000 </y>
-      <z> 0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -113,15 +108,10 @@
     <type>rotate</type>
     <object-name>rotor7</object-name>
     <property>rotors/bar/yaw-deg</property>
-    <center>
-       <x-m> 0.000 </x-m>
-       <y-m> 0.000 </y-m>
-       <z-m> 0.000 </z-m>
-    </center>
     <axis>
-      <x> 0.000 </x>
-      <y>-1.000 </y>
-      <z> 0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -147,36 +137,15 @@
     <object-name>rotor19</object-name>
   </animation>
 
-  <!--<animation>
-    <type>rotate</type>
-    <object-name>Ensemble</object-name>
-    <property>rotors/main/blade[0]/position-deg</property>
-    <center>
-       <x-m> 0.000 </x-m>
-       <y-m> 0.000 </y-m>
-       <z-m> 0.000 </z-m>
-    </center>
-    <axis>
-      <x>  0.000 </x>
-      <y>  0.000 </y>
-      <z>  1.000 </z>
-    </axis>
-  </animation>-->
-  
   <animation>
     <type>spin</type>
     <object-name>Ensemble</object-name>
     <property>rotors/main/rpm</property>
-    <factor>1.0</factor>
-    <center>
-       <x-m> 0.000 </x-m>
-       <y-m> 0.000 </y-m>
-       <z-m> 0.000 </z-m>
-    </center>
+    <factor> 1 </factor>
     <axis>
-      <x>  0.000 </x>
-      <y>  0.000 </y>
-      <z>  1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 

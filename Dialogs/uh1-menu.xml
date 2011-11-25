@@ -20,6 +20,13 @@
           <property>/sim/model/hide-guns</property>
         </binding>
       </item>
+      <item>
+        <label>Show/hide sprayer</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>/sim/model/hide-sprayer</property>
+        </binding>
+      </item>
     </menu>
   </default>
 

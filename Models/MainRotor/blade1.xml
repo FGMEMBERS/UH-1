@@ -87,7 +87,7 @@
     <condition>
       <less-than>
         <property>rotors/main/rpm</property>
-	<value>150</value>
+        <value>150</value>
       </less-than>
     </condition>
   </animation>
@@ -106,9 +106,9 @@
        <z-m>  0.004 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -129,9 +129,9 @@
        <z-m>  0.000 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -155,9 +155,9 @@
        <z-m> -0.002 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -179,15 +179,10 @@
     <object-name>axe</object-name>
     <property>rotors/main/cone1-deg</property>
     <factor> -1 </factor>
-    <center>
-       <x-m> 0.000 </x-m>
-       <y-m> 0.000 </y-m>
-       <z-m> 0.000 </z-m>
-    </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -200,15 +195,10 @@
     <object-name>blade3</object-name>
     <object-name>blade4</object-name>
     <property>rotors/main/blade[0]/incidence-deg</property>
-    <center>
-       <x-m> 0.000 </x-m>
-       <y-m> 0.000 </y-m>
-       <z-m> 0.000 </z-m>
-    </center>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
