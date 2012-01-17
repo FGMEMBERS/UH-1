@@ -4,6 +4,13 @@
 
   <fx>
 
+    <!-- Part of Ride of the Valkyries By Richard Wagner
+                                       Rearranged L. Roberts       
+
+         Midifile : http://www.blueman.name/FICHIERS/UpdateFileStats.php 
+
+         Use Timidity and freepats for make the Wav file.
+    -->
     <door>
       <name>Surprise</name>
       <mode>looped</mode>
