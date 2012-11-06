@@ -1,8 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
   <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
 
   <!-- tailrpm-->
   <model>
@@ -84,7 +91,7 @@
    <model>
     <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/chronograph/chronograph.xml</path>
     <offsets>
-      <x-m> -0.200 </x-m>
+      <x-m> -0.195 </x-m>
       <y-m>  0.555 </y-m>
       <z-m>  0.059 </z-m>
       <roll-deg>      0 </roll-deg>
