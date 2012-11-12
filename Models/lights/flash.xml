@@ -15,7 +15,17 @@
     <type>noshadow</type>
     <object-name>flash</object-name>
   </animation>
-<!--
+
+  <!-- Transparency for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>Light</object-name>
+  </effect>
+  
+  <!--
   <animation>
     <type>select</type>
     <object-name>lumiereG</object-name>
@@ -27,15 +37,11 @@
       </not-equals>
     </condition>
   </animation>
--->
+  -->
+  
   <animation>
     <type>flash</type>
     <object-name>flash</object-name>
-    <center>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.000 </z-m>
-    </center>
     <axis>
       <x> -1 </x>
       <y>  0 </y>

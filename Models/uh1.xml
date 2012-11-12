@@ -24,8 +24,15 @@
 
   <!-- Interieur -->
   <model>
+    <name>Interieur</name>
     <path>Aircraft/UH-1/Models/Interior/interior.xml</path>
   </model>
+
+  <!-- For Rembrandt -->
+  <animation>
+    <type>noshadow</type>
+    <object-name>Interieur</object-name>
+  </animation>
 
   <!-- Rotor de queue -->
   <model>

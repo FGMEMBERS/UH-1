@@ -120,11 +120,6 @@
       <green-prop>emission/green</green-prop>
       <blue-prop>emission/blue</blue-prop>
     </emission>
-    <!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
-    -->
   </animation>
   
   <effect>
@@ -173,6 +168,23 @@
     <object-name>beacon</object-name>
     <object-name>taillighttrs</object-name>
   </animation>
+
+  <!-- Transparency for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitres</object-name>
+    <object-name>frontdoorglasleft</object-name>
+    <object-name>frontdoorglasright</object-name>
+    <object-name>sidedoorglasleft</object-name>
+    <object-name>sidedoorglasright</object-name>
+    <object-name>slidedoorglasleft</object-name>
+    <object-name>slidedoorglasright</object-name>
+    <object-name>beacon</object-name>
+    <object-name>taillighttrs</object-name>
+  </effect>
 
   <!-- Sprayer -->
   <model>

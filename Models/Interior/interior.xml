@@ -54,6 +54,20 @@
     <object-name>slidedoorglasrighint</object-name>
   </animation>
 
+  <!-- Transparency for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>frontdoorglasleftint</object-name>
+    <object-name>frontdoorglasrighint</object-name>
+    <object-name>sidedoorglasleftint</object-name>
+    <object-name>sidedoorglasrightint</object-name>
+    <object-name>slidedoorglasleftint</object-name>
+    <object-name>slidedoorglasrighint</object-name>
+  </effect>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/UH-1/Models/Pilot/pilot.xml</path>
