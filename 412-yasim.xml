@@ -1,55 +1,41 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- FDM by Maik Justus, Emmanuel Baranger and HHS (Heiko Schulz)
+<!-- FDM by Maik Justus, Emmanuel Baranger and HHS (Heiko Schulz) Stuart C
 
-    FDM based on information given in NASA-CR-3144; TR-1087-1
-    and NASA-CR-3145
-    UH-1H DESCRIPTIVE DATA
+http://www.bellhelicopter.com/MungoBlobs/343/325/412EPI_SPCB_2014v02_EN_WEB.pdf
 
-    MAIN ROTOR
-    Blades 2
-    Radius 7.32 m (24 f t )
-    Chord 0.333 m (1.75 f t )
-    Section NACA 0012
-    Hub type Teetering
-    Undersling 0.132 m (0.433 f t )
-    Twist -10.9 deg
-    Pitch flap coupling (Fj3) Zero
-    Shaft tilt 5 deg forward
-    Design rpm
-    Hub loca&on
-    Blade flapping inertia 1641.2 kg-m (1210.5 slug-ft )
-    314 to 324 (power on), 294 t o 339 (power off)
-    FS 133.3, WL 136.5
-    2 2
 
-    TAIL ROTOR
-    Blades 2
-    Diameter 2.59 m (8.3 f t )
-    Chord 0.297 m (0.958 f t )
-    Twist Zero
-    Gear ratio 5.123
-    Hub location FS 479.4, WL 137.6, BL -15.16
-    ELEXATOR (EACH SIDE, EXCLUDING FUSELAGE CARRY-THROUGH)
-    Area 1.016 m2 (10.936 ft2)
-    Aspect ratio 2.009
-    Center of pressure location
-    Incidence Variable
-    FS 363.0, BL - i- 28.1, WL 64.83
-    VERTICAL STABILIZER
-    Area
-    Aspect ratio 1 .&6
-    Center of pressure location
-    1.036 m2 (11 .I5 ft2)
-    FS 450.3, BL 0.4, WL 104.7
+Bell 412  
+Speeds at max gross wt      
+Vne 140 kts 259 kph 
+Max cruise¹ 122 kts 226 kph 
+Range at VLRC¹  368 nm 672 km 
+Max endurance¹ 3.8 hrs   
+Capacities     
+Standard seating 1 + 14   
+Maximum seating 1 + 14   
+Standard fuel 331 US gal 1251 liters 
+Aux fuel 33 or 164 US gal 125 or 621 liters 
+Cabin Volume 220 ft³ 6.2 m³ 
+Baggage Compartment Volume 28 ft³ 0.8 m³ 
+Weights     
+VFR Empty wt 7,071 lbs 3,207 kg 
+Std internal gross wt 11,900 lbs 5,398 kg 
+External gross wt 11,900 lbs 5,398 kg 
+Useful load, standard 4,829 lbs 2,190 kg 
+Max ext load (cargo hook limit) 4,500 lbs 2,041 kg 
 -->
-<airplane mass="5200">
+<!--
+<airplane mass="6789">
+-->
+
+<airplane mass="6789" version="YASIM_VERSION_CURRENT">
 
   <approach speed="80" aoa="16">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.3"/>
   </approach>
 
-  <cruise speed="84" alt="0">
+  <cruise speed="130" alt="0">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
   </cruise>
 
@@ -57,35 +43,43 @@
          x="4.92" y="0.0" z="1.233"
          nx="0.0875" ny="0" nz="1."
          fx="1" fy="0" fz="0" ccw="1"
-         maxcollective="15.5" mincollective=".5"
-         mincyclicele="-24" maxcyclicele="24"
-         mincyclicail="-19" maxcyclicail="21"
-         diameter="14.63" numblades="2"
-         weightperblade="120" twist="-10.9"
-         chord="0.533" rpm="324"
-         relbladecenter="0.5" dynamic=".3"
-         rellenflaphinge="0.018"
-         sharedflaphinge="1"
-         delta3="0" delta=".25"
-         pitch-a="10" pitch-b="15"
-         flapmin="-15" flapmax="15"
-         flap0="-5" flap0factor="0"
-         notorque="0" dragfactor="0.30"
-         translift-ve="20"
-         translift-maxfactor="1.3"
-         ground-effect-constant="0.1"
-         taper="1"
-         number-of-segments="8" number-of-parts="8"
-         rel-len-where-incidence-is-measured="0.7" rel-len-blade-start="0.16"
-         airfoil-lift-coefficient="4.4" airfoil-drag-coefficient0="0.00525" airfoil-drag-coefficient1="0.07"
-         incidence-stall-zero-speed="24" incidence-stall-half-sonic-speed="19.5"
-         lift-factor-stall="0.18"
-         stall-change-over="5.5"
-         drag-factor-stall="8.0"
-         cyclic-factor="0.95"
-         rotor-correction-factor="0.93"
-         downwashfactor ="0.3"
-         balance="0.999985">
+        maxcollective="18.8" mincollective="-0.7"
+  mincyclicele="-15.3" maxcyclicele="17.2"
+  mincyclicail="-5.23" maxcyclicail="6.0"
+  diameter="14.0" numblades="4" weightperblade="100" relbladecenter="0.5"
+  dynamic="1" rpm="400" rellenflaphinge="0.18" delta3="0"
+  delta=".125"
+  pitch-a="10"
+  pitch-b="15"
+  flapmin="-15"
+  flapmax="15"
+  flap0="-5"
+  flap0factor="0"
+  notorque="0"
+  dragfactor="0.30"
+  translift-ve="20"
+  translift-maxfactor="1.5"
+  ground-effect-constant="0.1"
+  twist="-8.5"
+  taper="1"
+  chord="0.27"
+  number-of-segments="8"
+  number-of-parts="8"
+  rel-len-where-incidence-is-measured="0.7"
+  rel-len-blade-start="0.076"
+
+  airfoil-lift-coefficient="3.46"
+  airfoil-drag-coefficient0="0.0064"
+  airfoil-drag-coefficient1="0.20"
+  incidence-stall-zero-speed="15"
+  incidence-stall-half-sonic-speed="14.5"
+  lift-factor-stall="0.18"
+  stall-change-over="5.5"
+  drag-factor-stall="2.0"
+  cyclic-factor="0.8"
+  rotor-correction-factor="0.95"
+  downwashfactor="1.0"
+>
          <control-input axis="/controls/flight/aileron-trim" control="CYCLICAIL" split="true"/>
          <control-input axis="/controls/flight/aileron" control="CYCLICAIL" src0="-1.0" src1="1.0" dst0="-0.35" dst1="0.35"/>
          <control-input axis="/controls/flight/elevator-trim" control="CYCLICELE" split="true"/>
@@ -98,60 +92,47 @@
   <rotor name="tail" 
          x="-3.87" y="-0.473" z="1.12"
          nx="0.00" ny="-1" nz="-0.00"
-         fx="1" fy="0" fz="0" ccw="1" phi0="70"
-         maxcollective="20" mincollective="-9.3"
-         diameter="2.6" numblades="2"
-         chord="0.297" twist="0"
-         weightperblade="30" relbladecenter="0.7"
-         dynamic="1" rpm="1620" rellenflaphinge="0.0" delta3="1" translift="0" delta="0.5" pitch-a="10" pitch-b="15"
-         airfoil-lift-coefficient="6.3" airfoil-drag-coefficient0="0.0075" airfoil-drag-coefficient1="0.1" incidence-stall-zero-speed="18"
-         incidence-stall-half-sonic-speed="9" lift-factor-stall="0.18" stall-change-over="5.5" drag-factor-stall="8.0"
-         notorque="0" taper="1" number-of-segments="5" number-of-parts="4" rel-len-blade-start="0.33"
-         downwashfactor ="0.3"
-         rotor-correction-factor="0.995">
+         fx="1" fy="0" fz="0" ccw="1" 
+         maxcollective="23" mincollective="-16.5"
+  phi0="110"
+  diameter="2.58" numblades="2" weightperblade="2" relbladecenter="0.7"
+  dynamic="1" rpm="2519" rellenflaphinge="0.0" delta3="1" translift="0" delta="0.5"
+  sharedflaphinge="1"
+  flap0="-0.5"
+  pitch-a="10"
+  pitch-b="15"
+  airfoil-lift-coefficient="6.4"
+  airfoil-drag-coefficient0="0.0035"
+  airfoil-drag-coefficient1="0.10"
+  notorque="0"
+  taper="1"
+  chord="0.25"
+  number-of-segments="5"
+  number-of-parts="4"
+  rel-len-blade-start="0.33"
+  incidence-stall-zero-speed="9"
+  incidence-stall-half-sonic-speed="18"
+  lift-factor-stall="0.18"
+  stall-change-over="5.5"
+  drag-factor-stall="8"
+  rotor-correction-factor="1.0"
+  downwashfactor="1.0"
+>
          <control-input axis="/controls/flight/rudder" control="COLLECTIVE" invert="true" src0="-1.0" src1="1.0" dst0="-1.0" dst1="1.0"/>
   </rotor>
 
-  <rotor name="bar"
-         x="4.92" y="0.0" z="2.5"
-         nx="0.05" ny="0" nz="1."
-         fx="1" fy="0" fz="0" ccw="1"
-         diameter="3" numblades="2"
-         mintiltpitch=" -10"
-         maxtiltpitch="10"
-         mintiltroll="-10"
-         maxtiltroll=" 10"
-         weightperblade="50"
-         chord="0.001" rpm="324"
-         relbladecenter="0.95" dynamic=".25"
-         rellenflaphinge="0.000000"
-         flapmin="-25" flapmax="25"
-         delta3="0" delta=".25"
-         flap0="-0.5" flap0factor="0"
-         notorque="0" dragfactor="0.30"
-         taper="1"
-         number-of-segments="3" number-of-parts="4"
-         rel-len-where-incidence-is-measured="0.7" rel-len-blade-start="0.16"
-         airfoil-lift-coefficient="0.0000001" airfoil-drag-coefficient0="0.000075" airfoil-drag-coefficient1="0.0"
-         incidence-stall-zero-speed="29" incidence-stall-half-sonic-speed="29"
-         lift-factor-stall="0"
-         stall-change-over="5.5"
-         drag-factor-stall="1.0"
-         cyclic-factor="0.8"
-         rotor-correction-factor="0.98" >
-  </rotor>
-
-  <rotorgear max-power-engine="1044"
-             max-power-rotor-brake="185"
+  <rotorgear  max-power-engine="1850"
+              max-power-rotor-brake="185"
              rotorgear-friction="3.7"
              engine-prop-factor="0.015"
              engine-accel-limit="4"
              yasimdragfactor="40"
              yasimliftfactor="240">
+>
              <control-input axis="/controls/engines/engine[0]/magnetos" control="ROTORGEARENGINEON"/>
              <control-input axis="/controls/rotor/brake" control="ROTORBRAKE" src0="0.0" src1="1.0" dst0="0.0" dst1="1.0"/>
              <control-input axis="/controls/rotor/reltarget" control="ROTORRELTARGET" src0="0.0" src1="2.0" dst0="0.0" dst1="2.0"/>
-             <control-input axis="/controls/rotor/maxreltorque" control="ROTORENGINEMAXRELTORQUE" src0="0.0" src1="2.0" dst0="0.0" dst1="2.0"/>
+             <control-input axis="/controls/rotor/maxreltorque" control="ROTORENGINEMAXRELTORQUE" src0="0.0" src1="1.0" dst0="0.0" dst1="1.0"/>
   </rotorgear>
 
   <cockpit x="7.589" y="0.694" z="-0.570"/>
@@ -174,16 +155,13 @@
 
   <hstab x="-1.1" y="0.0" z="-0.3"
          taper="1.0"
-         incidence="15"
+         incidence="0"
          effectiveness="0.25"
          length="1.0131"
          chord="0.5"
          sweep="0">
          <stall aoa="0" width="0" peak="1.5"/>
-         <flap0 start="0" end="1" lift="1.6" drag="1.2"/>
-         <control-input axis="/controls/flight/elevator" control="FLAP0"/>
-         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
-         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+         
   </hstab>
 
  <!-- left skid -->
@@ -223,13 +201,13 @@
         spring="0.1"
         sfric="1"
         dfric="1"/>
-  <tank x="4.5" y="-0.5" z="-1.4" capacity="1400"/>
+  <tank x="4.5" y="-0.5" z="-1.4" capacity="2211"/>
   <!-- work around bug in native-fdm.cxx:184 -->
-  <tank x="0" y="0" z="0" capacity="0"/>
+  <tank x="0" y="0" z="0" capacity="220"/>
 
   <ballast x="+9.2" y="+0.0" z=" -4.9" mass="500"/>
 
-  <ballast x="+8.3" y="-0.0" z=" 0" mass="-500"/>
+  <ballast x="+8.3" y="-0.0" z=" 0" mass="200"/>
   <ballast x="+1.7" y=" 0.0" z=" 0" mass="-500"/>
 
   <ballast x="+5" y="-1.3" z=" 0" mass="500"/>

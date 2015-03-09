@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>searchlight.ac</path>
+
+  <animation>
+    <object-name>searchlight_base</object-name>
+    <object-name>searchlight_front</object-name>
+    
+    <object-name>searchlight_vitre</object-name>
+  </animation>
+  
+  <animation>
+    <name>SearchLight</name>
+    <object-name>searchlight_base</object-name>
+    <object-name>searchlight_front</object-name>
+    <object-name>searchlight_vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>SearchLight</object-name>
+    <condition>
+      <property>sim/model/hide-searchlight</property>
+    </condition>
+  </animation>
+
+</PropertyList>

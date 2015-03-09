@@ -10,20 +10,27 @@
     <object-name>needle</object-name>
     <object-name>bug</object-name>
 
-    <object-name>vitre</object-name>
+>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitre</object-name>
-  </animation>
+<!--Working For Rembrandt-->
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
+<animation>
+<object-name>vitre</object-name>
+</animation>
+
+<animation>
+<type>noshadow</type>
+<object-name>vitre</object-name>
+</animation>
+
+<animation>
+<type>shader</type>
+<shader>chrome</shader>
+<texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+<object-name>vitre</object-name>
+</animation>
+<!--Working For Rembrandt-->
 
   <animation>
     <type>material</type>

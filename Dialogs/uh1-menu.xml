@@ -27,8 +27,21 @@
           <property>/sim/model/hide-sprayer</property>
         </binding>
       </item>
+      <item>
+        <label>Show/hide luggage</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>/sim/model/hide-luggage</property>
+        </binding>
+      </item>
+      <item>
+        <label>Show/hide search light</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>/sim/model/hide-searchlight</property>
+        </binding>
+      </item>
     </menu>
   </default>
 
 </PropertyList>
-

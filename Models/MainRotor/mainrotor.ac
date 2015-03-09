@@ -8,7 +8,7 @@ OBJECT poly
 name "rotor1"
 data 10
 rotor1.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -499,7 +499,7 @@ OBJECT poly
 name "rotor10"
 data 11
 rotor10.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -750,7 +750,7 @@ OBJECT poly
 name "rotor11"
 data 11
 rotor11.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -1001,7 +1001,7 @@ OBJECT poly
 name "rotor12"
 data 11
 rotor12.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -1252,7 +1252,7 @@ OBJECT poly
 name "rotor13"
 data 11
 rotor13.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 128
@@ -2286,7 +2286,7 @@ OBJECT poly
 name "rotor14"
 data 11
 rotor14.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -2537,7 +2537,7 @@ OBJECT poly
 name "rotor15"
 data 11
 rotor15.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -2788,7 +2788,7 @@ OBJECT poly
 name "rotor16"
 data 11
 rotor16.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -3039,7 +3039,7 @@ OBJECT poly
 name "rotor17"
 data 11
 rotor17.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -3290,7 +3290,7 @@ OBJECT poly
 name "rotor18"
 data 11
 rotor18.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -3350,7 +3350,7 @@ OBJECT poly
 name "rotor19"
 data 11
 rotor19.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -3410,7 +3410,7 @@ OBJECT poly
 name "rotor2.001"
 data 6
 rotor2
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 128
@@ -4444,7 +4444,7 @@ OBJECT poly
 name "rotor3"
 data 10
 rotor3.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 168
@@ -5770,7 +5770,7 @@ OBJECT poly
 name "rotor4"
 data 10
 rotor4.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 452
@@ -9688,7 +9688,7 @@ OBJECT poly
 name "rotor5"
 data 10
 rotor5.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 128
@@ -10722,7 +10722,7 @@ OBJECT poly
 name "rotor6"
 data 10
 rotor6.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 128
@@ -11756,7 +11756,7 @@ OBJECT poly
 name "rotor7"
 data 10
 rotor7.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 492
@@ -15594,7 +15594,7 @@ OBJECT poly
 name "rotor8"
 data 10
 rotor8.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 128
@@ -16628,7 +16628,7 @@ OBJECT poly
 name "rotor9"
 data 10
 rotor9.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 36

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>Bell UH 1 "Huey"</title>
+  <line>______________________________________________</line>
+  <line></line>
+  <line>To open and close the doors just click on it!</line>
+  <key>
+    <name>Delete</name>
+    <desc>Fire the miniguns</desc>
+  </key>
+  <key>
+    <name>e</name>
+    <desc>Sprayer</desc>
+  </key>
+  <key>
+    <name>[</name>
+    <desc>port side Fire rockets</desc>
+  </key>
+  <key>
+    <name>]</name>
+    <desc>starboard side Fire rockets</desc>
+  </key>
+  <key>
+    <name>N</name>
+    <desc>Toggle rotor brake</desc>
+  </key>
+  <key>
+    <name>n</name>
+    <desc>Apply rotor brake</desc>
+  </key>
+  <key>
+    <name>}</name>
+    <desc>Start Engines</desc>
+  </key>
+  <key>
+    <name>{</name>
+    <desc>Shutdown Engines</desc>
+  </key>
+  <key>
+    <name>Ctrl+f</name>
+    <desc>Surprise</desc>
+  </key>
+  
+</PropertyList>

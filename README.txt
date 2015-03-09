@@ -1,72 +1,24 @@
-English/Français
+****************************
+ReadMe UH-1 for FlightGear
+****************************
+****************************
+Licence:
 
-[English]
-----------
+GNU GPL V2.0
+****************************
+This is a Model of a Bell "Huey" UH-1 Helicopter for FlightGear 1.9.1 and later. It was modelled after a UH-1H/D-model.
 
-A little history
-================
+The fdm is based on real free available datas and measurements of the NASA, using a Bell UH-1H.
+The fdm was created with this datas by Maik Justus and tested by Todd Marois, Ex-US-Navy Pilot on a UH-1N.
+The sound is from a real UH-1D, recorded by Maik Justus.
+The 3d Model was created by Emmanuel Barranger and Heiko Schulz, using 3-view drawings out of the Flight Manual, published on http://www.huey.co.uk.
+#################
+Known Issues:
+-bad engine simulation- no autorotation possible (clutch simulation missing!)
+-panel not ready- need details pictures of the middle panel of the engine instrumentation
+-no lights yet
+-no gun/ rocket sounds
+-missing pieces in the cockpit like stick, pedals, overhead etc....
+#######################
 
-Bell UH 1 Iroquois "Huey"
-=========================
-
-Manufacturer                  : Bell
-Type                          :
-Year                          : 1956
-Powerplant                    :
-Wingspan                      :
-Length                        :
-Height                        :
-Loaded weight                 :
-Cruise speed                  :
-Range                         :
-Crew                          :
-Charge                        :
-
-
-Some useful keys:
-=================
-
-Thanks
-======
-Maik JUSTUS for the new FDM
-Heiko Schulz for the big change in 3D and FDM
-
-===============
-BARANGER Emmanuel
-May 20, 2007. 
-
-
-[Français]
-----------
-Un peu d'histoire
-=================
-
-Bell UH 1 Iroquois "Huey"
-=========================
-
-Constructeur                  : Bell
-Type                          : 
-Année                         : 1956
-Moteur                        : 
-Envergure                     : 
-Longueur                      : 
-Hauteur                       : 
-Poids estimé au décollage     : 
-Vitesse estimée de croisière  : 
-Autonomie estimée             : 
-Equipage                      : 
-Charge utile                  : 
-
-
-Quelques touches utiles :
-=========================
-
-Remerciements
-=============
-Maik JUSTUS pour le nouveau FDM
-Heiko Schulz pour les énormes changement sur la 3D et le FDM
-
-===============
-BARANGER Emmanuel
-20 Mai 2007.
-
+January 2010

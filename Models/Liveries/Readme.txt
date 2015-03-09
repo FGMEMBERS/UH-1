@@ -1,3 +1,9 @@
+default     (Tigre)
+
+textureHIGH (Tigre)
+
+These liveries were made by : BARANGER Emmanuel 2007
+
 LUFTWAFFE
 
 MARINES

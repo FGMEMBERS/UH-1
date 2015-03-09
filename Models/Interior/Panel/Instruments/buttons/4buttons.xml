@@ -6,12 +6,18 @@
 
   <animation>
     <!-- Objets opaques -->
+<type>material</type>
     <object-name>fond</object-name>
     <object-name>button1</object-name>
     <object-name>button2</object-name>
     <object-name>button3</object-name>
     <object-name>button4</object-name>
-
+<emission>
+        <red>1.0</red>
+			<green>1.0</green>
+			<blue>1.0</blue>
+<factor-prop>/controls/lighting/dash-dim</factor-prop>
+    </emission>
     <!-- Objets transparents -->
   </animation>
 

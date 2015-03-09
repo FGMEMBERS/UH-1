@@ -7,7 +7,7 @@ name "starflex"
 loc 0 0 -0
 data 8
 starflex
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 805
@@ -6741,7 +6741,7 @@ name "starflex2"
 loc 0 0 -0
 data 9
 starflex2
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 3818

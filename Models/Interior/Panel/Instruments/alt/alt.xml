@@ -15,20 +15,50 @@
     <object-name>inhg.dn</object-name>
     <object-name>onhgknob</object-name>
 
-    <object-name>vitre</object-name>
+  
   </animation>
 
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitre</object-name>
-  </animation>
+<!--Working For Rembrandt-->
+
+<animation>
+<object-name>vitre</object-name>
+</animation>
+
+<animation>
+<type>noshadow</type>
+<object-name>vitre</object-name>
+</animation>
+
+<animation>
+<type>shader</type>
+<shader>chrome</shader>
+<texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+<object-name>vitre</object-name>
+</animation>
+<!--Working For Rembrandt-->
+
+
+
 
   <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
+    <type>material</type>
+    <object-name>fond</object-name>
+  
+    <emission>
+        <red>1.0</red>
+			<green>1.0</green>
+			<blue>1.0</blue>
+<factor-prop>/controls/lighting/landing-lights</factor-prop>
+    </emission>
   </animation>
+
+
+
+
+
+
+
+
 
   <animation>
     <type>material</type>
@@ -39,10 +69,10 @@
     <object-name>inhg</object-name>
     <object-name>onhgknob</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
-      <red>   0.030 </red>
-      <green> 0.015 </green>
-      <blue>  0.005 </blue>
+        <red>1.0</red>
+			<green>1.0</green>
+			<blue>1.0</blue>
+<factor-prop>/controls/lighting/dash-dim</factor-prop>
     </emission>
   </animation>
 

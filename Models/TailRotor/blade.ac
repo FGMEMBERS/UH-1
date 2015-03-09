@@ -8,7 +8,7 @@ OBJECT poly
 name "blade"
 data 9
 blade.001
-texture "colors.png"
+texture "tailrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 36

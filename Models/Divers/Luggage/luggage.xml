@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>luggage.ac</path>
+  
+  <animation>
+    <object-name>luggage</object-name>
+    
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>luggage</object-name>
+    <condition>
+        <property>sim/model/hide-luggage</property>
+    </condition>
+  </animation>
+  
+</PropertyList>

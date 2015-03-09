@@ -23,7 +23,7 @@
       <x-m> 0 </x-m>
       <y-m> 0 </y-m>
       <z-m> 0 </z-m>
-      <heading-deg> 180.000 </heading-deg>
+      <heading-deg> 180 </heading-deg>
     </offsets>
   </model>
 
@@ -72,4 +72,3 @@
   </animation>
 
 </PropertyList>
-

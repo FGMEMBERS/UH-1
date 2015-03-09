@@ -2,48 +2,59 @@
 
 <PropertyList include="uh1-base.xml">
 
-  <sim>
+<sim>
 
-    <description>Bell 212 "TwinHuey"</description>
-    <author>BARANGER Emmanuel (FMD/3D), StuartC (Twin version), Heiko Schulz (3D/FDM), Simon Lister (3D), Maik Justus (FDM, sound)</author>
-    <status>V0.5</status>W
+<description>Bell 212 "TwinHuey"</description>
+<author>BARANGER Emmanuel (FMD/3D), StuartC (Twin version FDM ), Heiko Schulz (3D/FDM), Simon Lister (3D), Maik Justus (FDM, sound)</author>
+<status>V0.7</status>
 
-    <flight-model>yasim</flight-model>
-    <aero>212-yasim</aero>
+<flight-model>yasim</flight-model>
+<aero>212-yasim</aero>
 
-    <startup>
-      <splash-texture>Aircraft/UH-1/Splash/212-splash.png</splash-texture>
-    </startup>
+<!--STARTUP-->
+<startup>
+<splash-texture>Aircraft/UH-1/Splash/212-splash.png</splash-texture>
+</startup>
 
-    <rating>
-      <FDM type="int">     3 </FDM>
-      <systems type="int"> 2 </systems>
-      <cockpit type="int"> 2 </cockpit>
-      <model type="int">   4 </model>
-    </rating>
+<!--MODEL-->
+<model>
+<path archive="y">Aircraft/UH-1/Models/212-TwinHuey.xml</path>
+</model>
 
-    <model>
-      <path archive="y">Aircraft/UH-1/Models/212-TwinHuey.xml</path>
-      <hide-guns type="bool">false</hide-guns>
-      <hide-sprayer type="bool">false</hide-sprayer>
-      <uh1>
-        <state type="int">0</state>
-        <engine type="float">0</engine>
-        <rotor-step-deg type="float">-1</rotor-step-deg>
-      </uh1>
-    </model>
+<!--SUBMODELS-->
+<submodels>
+<serviceable type="bool">true</serviceable>
+<path>Aircraft/UH-1/Models/Effects/guns/UH-1submodels.xml</path>
+</submodels>
 
-    <submodels>
-      <serviceable type="bool">true</serviceable>
-      <path>Aircraft/UH-1/Models/Effects/guns/UH-1submodels.xml</path>
-    </submodels>
+<!--MULTIPLAY-->
+<multiplay n="0">
+<generic n="0">
+<string n="1" type="string">212</string>
+</generic>
+</multiplay>
+</sim>
 
-    <multiplay n="0">
-      <generic n="0">
-        <string n="1" type="string">412</string>
-      </generic>
-    </multiplay>
-
-  </sim>
+<!--INSTRUMENTATION-->
+<instrumentation>
+<cdu>
+<config>
+<texture>boeing_brown.png</texture>
+</config>
+<display>IDENT</display>
+<ident>
+<model>412</model>
+<engines>-80C2B1F</engines>
+</ident>
+<input type="string"/>
+<serviceable>true</serviceable>
+</cdu>
+</instrumentation>
+<!--RADAR-->
+<nasal>
+<radar>
+<path>Aircraft/UH-1/Models/Interior/Panel/Instruments/RDR-160/RDR160.nas</path>
+</radar>
+</nasal>
 
 </PropertyList>

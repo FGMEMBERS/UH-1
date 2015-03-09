@@ -7,7 +7,7 @@ OBJECT poly
 name "rotortail"
 data 9
 rotortail
-texture "colors.png"
+texture "tailrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 298
@@ -2491,7 +2491,7 @@ OBJECT poly
 name "rotortail1"
 data 10
 rotortail1
-texture "colors.png"
+texture "tailrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 56
@@ -2893,7 +2893,7 @@ OBJECT poly
 name "rotortail2"
 data 10
 rotortail2
-texture "colors.png"
+texture "tailrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 369

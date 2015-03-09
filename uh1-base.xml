@@ -2,211 +2,249 @@
 
 <PropertyList>
 
-  <sim include="Nasal/views.xml">
+<!--VIEWS-->
+<sim include="Systems/views.xml">
 
-    <description>Bell UH 1 "Huey"</description>
-    <author>BARANGER Emmanuel (FMD/3D), Heiko Schulz (3D/FDM), Simon Lister (3D), Maik Justus (FDM, sound)</author>
-    <status>alpha</status>
-    <license>GPL v2</license>
+<description>Bell UH 1 "Huey"</description>
+<author>BARANGER Emmanuel (FMD/3D), Heiko Schulz (3D/FDM), Simon Lister (3D), Maik Justus (FDM, sound)</author>
+<status>alpha</status>
 
-    <fuel-fraction>0.5</fuel-fraction>
+<license>GPL v2</license>
+<fuel-fraction>0.5</fuel-fraction>
 
-    <sound>
-      <path>Aircraft/UH-1/Sounds/uh1-sound.xml</path>
-    </sound>
+<!--MODEL-->
+<model>
+<hide-guns type="bool">false</hide-guns>
+<hide-sprayer type="bool">false</hide-sprayer>
+<hide-luggage type="bool">false</hide-luggage>
+<hide-searchlight type="bool">false</hide-searchlight>
+<uh1>
+<state type="int">0</state>
+<engine type="float">0</engine>
+<rotor-step-deg type="float">-1</rotor-step-deg>
+</uh1>
+</model>
 
-    <submodels>
-      <serviceable type="bool">true</serviceable>
-      <path>Aircraft/UH-1/Models/Effects/guns/UH-1submodels.xml</path>
-    </submodels>
+<rating>
+<FDM type="int">     3 </FDM>
+<systems type="int"> 2 </systems>
+<cockpit type="int"> 2 </cockpit>
+<model type="int">   4 </model>
+</rating>
 
-    <multiplay>
-      <chat_display>1</chat_display>
-      <generic> 
-        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
-        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
-        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
-        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
-        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
-        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
-        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
-        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
-        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
-        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
-        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
-        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
-        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
-        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
-        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
-        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
-      </generic>
-    </multiplay>
+<!--SOUND-->
+<sound>
+<path>Aircraft/UH-1/Sounds/uh1-sound.xml</path>
+</sound>
 
-    <weight n="0">
-      <name>Pilot</name>
-      <weight-lb>180</weight-lb>
-      <max-lb>300</max-lb>
-    </weight>
+<!--SUBMODELS-->
+<submodels>
+<serviceable type="bool">true</serviceable>
+<path>Aircraft/UH-1/Models/Effects/guns/UH-1submodels.xml</path>
+</submodels>
 
-    <weight n="1">
-      <name>Co-Pilot</name>
-      <weight-lb>180</weight-lb>
-      <max-lb>300</max-lb>
-    </weight>
+<!--MULTIPLAY-->
+<multiplay>
+<chat_display>1</chat_display>
+<generic> 
+<int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+<int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+<int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+<int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+<int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+<int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+<int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+<int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+<int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+<float n="0" alias="/sim/model/door-positions/leftFrontDoor"/>
+<float n="1" alias="/sim/model/door-positions/rightFrontDoor"/>
+<float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+<float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
+<float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
+<float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
+<float n="6" alias="/sim/model/door-positions/leftSideDoor"/>
+<float n="7" alias="/sim/model/door-positions/rightSideDoor"/>
+<float n="8" alias="/sim/model/door-positions/leftSlideDoor"/>
+<float n="9" alias="/sim/model/door-positions/rightSlideDoor"/>
+<!-- -->
+<string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
+</generic>
+</multiplay>
 
-    <weight n="2">
-      <name>Right Passenger</name>
-      <weight-lb>0</weight-lb>
-      <max-lb>300</max-lb>
-    </weight>
+<!--WEIGHT-->
+<weight n="0">
+<name>Pilot</name>
+<weight-lb>180</weight-lb>
+<max-lb>300</max-lb>
+</weight>
+<weight n="1">
+<name>Co-Pilot</name>
+<weight-lb>180</weight-lb>
+<max-lb>300</max-lb>
+</weight>
+<weight n="2">
+<name>Right Passenger</name>
+<weight-lb>0</weight-lb>
+<max-lb>300</max-lb>
+</weight>
+<weight n="3">
+<name>Middle Passenger</name>
+<weight-lb>0</weight-lb>
+<max-lb>300</max-lb>
+</weight>
+<weight n="4">
+<name>Left Passenger</name>
+<weight-lb>0</weight-lb>
+<max-lb>300</max-lb>
+</weight>
+<weight n="5">
+<name>Load</name>
+<weight-lb>1700</weight-lb>
+<max-lb>3200</max-lb>
+</weight>
 
-    <weight n="3">
-      <name>Middle Passenger</name>
-      <weight-lb>0</weight-lb>
-      <max-lb>300</max-lb>
-    </weight>
+<!--HELPMENU-->
+<help include="Systems/help.xml"/>
+<!--HELPMENU-->
 
-    <weight n="4">
-      <name>Left Passenger</name>
-      <weight-lb>0</weight-lb>
-      <max-lb>300</max-lb>
-    </weight>
+<!--FLIGHTRECORDER-->
+<flight-recorder>
+<replay-config type="int">0</replay-config>
+<config n="0" include="/Aircraft/Generic/flightrecorder/generic-helicopter.xml">
 
-    <weight n="5">
-      <name>Load</name>
-      <weight-lb>1700</weight-lb>
-      <max-lb>3200</max-lb>
-    </weight>
+<!-- Add some custom properties -->
+<signal>
+<type>int</type>
+<property type="string">/sim/model/uh1/state</property>
+</signal>
+<signal>
+<type>int</type>
+<property type="string">/controls/engines/engine/magnetos</property>
+</signal>
+</config>
+</flight-recorder>
 
-    <help>
-      <title>Bell UH 1 "Huey"</title>
-      <line></line>
-      <line>To open and close the doors just click on it!</line>
-      <key>
-        <name>Delete</name>
-        <desc>Fire the miniguns</desc>
-      </key>
-      <key>
-        <name>e</name>
-        <desc>Sprayer</desc>
-      </key>
-      <key>
-        <name>[</name>
-        <desc>port side Fire rockets</desc>
-      </key>
-      <key>
-        <name>]</name>
-        <desc>starboard side Fire rockets</desc>
-      </key>
-      <key>
-        <name>N</name>
-        <desc>Toggle rotor brake</desc>
-      </key>
-      <key>
-        <name>n</name>
-        <desc>Apply rotor brake</desc>
-      </key>
-      <key>
-        <name>}</name>
-        <desc>Start Engines</desc>
-      </key>
-      <key>
-        <name>{</name>
-        <desc>Shutdown Engines</desc>
-      </key>
-      <key>
-        <name>Ctrl+f</name>
-        <desc>Surprise</desc>
-      </key>
-    </help>
+<menubar include="Dialogs/uh1-menu.xml"/>
 
-    <flight-recorder>
-      <replay-config type="int">0</replay-config>
-      <config n="0" include="/Aircraft/Generic/flightrecorder/generic-helicopter.xml">
-        <!-- Add some custom properties -->
-        <signal>
-          <type>int</type>
-          <property type="string">/sim/model/uh1/state</property>
-        </signal>
-        <signal>
-          <type>int</type>
-          <property type="string">/controls/engines/engine/magnetos</property>
-        </signal>
-      </config>
-    </flight-recorder>
+</sim>
 
-    <menubar include="Dialogs/uh1-menu.xml"/>
+<!--CONTROLS-->
+<controls>
+<engines>
+<engine n="0">
+<magnetos>0</magnetos>
+</engine>
+</engines>
+<gear>
+<brake-parking>1</brake-parking>
+</gear>
+<rotor>
+<reltarget>1</reltarget>
+<maxreltorque>1</maxreltorque>
+</rotor>
+<armament>
+<trigger>0</trigger>
+<trigger1>0</trigger1>
+<trigger2>0</trigger2>
+</armament>
+<luggage type="bool">false</luggage>
+</controls>
 
-  </sim>
+<!--INSTRUMENTATION-->
+<instrumentation>
+<cdu>  <serviceable type="bool">true</serviceable>
+<enabled type="bool">true</enabled></cdu>
+<gsdi>
+<serviceable type="bool">true</serviceable>
+<enabled type="bool">true</enabled>
+</gsdi>
+</instrumentation>
 
-  <controls>
-    <engines>
-      <engine n="0">
-        <magnetos>0</magnetos>
-      </engine>
-    </engines>
-    <gear>
-      <brake-parking>1</brake-parking>
-    </gear>
-    <rotor>
-      <reltarget>1</reltarget>
-      <maxreltorque>1</maxreltorque>
-    </rotor>
-    <armament>
-      <trigger>0</trigger>
-      <trigger1>0</trigger1>
-      <trigger2>0</trigger2>
-    </armament>
-  </controls>
+<!--INPUT-->
+<input>
+<keyboard include="Systems/uh1-keyboard.xml"/>
+</input>
 
-  <instrumentation>
-    <gsdi>
-      <serviceable type="bool">true</serviceable>
-      <enabled type="bool">true</enabled>
-    </gsdi>
-  </instrumentation>
+<!--ROTORS-->
+<rotors>
+<main>
+<rpm type="double">0</rpm>
+<cone-deg type="double">0</cone-deg>
+<cone1-deg type="double">0</cone1-deg>
+<cone2-deg type="double">0</cone2-deg>
+<cone3-deg type="double">0</cone3-deg>
+<cone4-deg type="double">0</cone4-deg>
+</main>
+<bar>
+<roll-deg type="float">0</roll-deg>
+<yaw-deg type="float">0</yaw-deg>
+</bar>
+<bar2>
+<roll-deg type="float">0</roll-deg>
+<yaw-deg type="float">0</yaw-deg>
+</bar2>
+</rotors>
 
-  <input>
-    <keyboard include="Nasal/uh1-keyboard.xml"/>
-  </input>
+<!--SYSTEMS-->
+<systems>
+<electrical>
+<outputs>
+<panel-dim type="float">1.0</panel-dim>
+<search-light type="bool">true</search-light>
+<cabin-dim type="float">1.0</cabin-dim>
+<comm type="float">8.0</comm>
+<comm1 type="float">8.0</comm1>
+<dash-lights type="float">1.0</dash-lights>
+<rem-lights type="float">1.0</rem-lights>
+<overhead-dim type="float">1.0</overhead-dim>
+<dash-dim type="float">1.0</dash-dim>
+<switch1 type="bool"></switch1>
+</outputs>
+<suppliers>
+<battery type="float">1.0</battery>
+</suppliers>
+</electrical>
+</systems>
 
-  <rotors>
-    <main>
-      <rpm type="double">0</rpm>
-      <cone-deg type="double">0</cone-deg>
-      <cone1-deg type="double">0</cone1-deg>
-      <cone2-deg type="double">0</cone2-deg>
-      <cone3-deg type="double">0</cone3-deg>
-      <cone4-deg type="double">0</cone4-deg>
-    </main>
-    <bar>
-      <roll-deg type="float">0</roll-deg>
-      <yaw-deg type="float">0</yaw-deg>
-    </bar>
-    <bar2>
-      <roll-deg type="float">0</roll-deg>
-      <yaw-deg type="float">0</yaw-deg>
-    </bar2>
-  </rotors>
+<!--ORIENTATION-->
+<orientation>
+<roll-rate-degps type="float">0</roll-rate-degps>
+</orientation>
 
-  <orientation>
-    <roll-rate-degps type="float">0</roll-rate-degps>
-  </orientation>
+<b707>
+<ess-bus type="float">24</ess-bus>
+</b707>
 
-  <nasal>
-    <uh1>
-      <file>Aircraft/UH-1/Nasal/doors.nas</file>
-      <file>Aircraft/UH-1/Nasal/uh1.nas</file>
-      <file>Aircraft/UH-1/Nasal/light.nas</file>
-      <file>Aircraft/UH-1/Nasal/liveries.nas</file>
-    </uh1>
-    <chronograph>
-      <path>Aircraft/UH-1/Models/Interior/Panel/Instruments/chronograph/chronograph.nas</path>
-    </chronograph>
-    <guns>
-      <file>Aircraft/UH-1/Nasal/guns.nas</file>
-    </guns>
-  </nasal>
+<!--NASAL_FILES-->
+<nasal>
+<VHF22>
+<file>Aircraft/Generic/DualControl/Instruments/VHF-22/ctl22.nas</file>
+</VHF22>
+<VIR32>
+<file>Aircraft/Generic/DualControl/Instruments/VIR-32/ctl32.nas</file>
+</VIR32>
+<ADF462>
+<file>Aircraft/Generic/DualControl/Instruments/ADF-462/ctl62.nas</file>
+</ADF462>
+<chronograph>
+<file>Aircraft/UH-1/Nasal/chronograph.nas</file>
+</chronograph>
+<uh1>
+<file>Aircraft/UH-1/Nasal/doors.nas</file>
+<file>Aircraft/UH-1/Nasal/uh1.nas</file>
+<file>Aircraft/UH-1/Nasal/light.nas</file>
+<file>Aircraft/UH-1/Nasal/Lights.nas</file>
+<file>Aircraft/UH-1/Nasal/liveries.nas</file>
+</uh1>
+<cdu>
+<file>Aircraft/UH-1/Nasal/boeing.nas</file>
+</cdu>
+<radar>
+<file>Aircraft/UH-1/Nasal/tcas.nas</file>
+</radar>
+<guns>
+<file>Aircraft/UH-1/Nasal/guns.nas</file>
+</guns>
+</nasal>
 
 </PropertyList>
-

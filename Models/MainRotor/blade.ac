@@ -9,7 +9,7 @@ OBJECT poly
 name "axe"
 data 7
 axe.001
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 284
@@ -2010,7 +2010,7 @@ OBJECT poly
 name "blade1"
 data 6
 blade1
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 20
@@ -2159,7 +2159,7 @@ OBJECT poly
 name "blade2"
 data 6
 blade2
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -2205,7 +2205,7 @@ OBJECT poly
 name "blade3"
 data 6
 blade3
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 20
@@ -2345,7 +2345,7 @@ OBJECT poly
 name "blade4"
 data 6
 blade4
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 12
