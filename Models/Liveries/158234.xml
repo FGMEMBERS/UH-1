@@ -5,8 +5,8 @@
   <sim>
     <model>
       <livery>
-        <name type="string">Swiss Huey</name>
-        <texture>Liveries/Swiss-huey.png</texture>
+        <name type="string">United States Navy (158234)</name>
+        <texture>Liveries/158234.png</texture>
 	 
         <diffuse>
           <red>   0.8 </red>
@@ -31,13 +31,11 @@
           <green> 0.0 </green>
           <blue>  0.0 </blue>
         </emission>
-<!--
         <transparency>
           <alpha> 0.0 </alpha>
         </transparency>
 
-        <shininess>10</shininess>
--->
+        <shininess>15</shininess>
       </livery>
     </model>
   </sim>

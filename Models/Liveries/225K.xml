@@ -5,17 +5,17 @@
   <sim>
     <model>
       <livery>
-        <name type="string">Swiss Huey</name>
-        <texture>Liveries/Swiss-huey.png</texture>
-	 
+        <name type="string">Koninklijke Marine</name>
+        <texture>Liveries/225K.png</texture>
+	
         <diffuse>
-          <red>   0.8 </red>
-          <green> 0.8 </green>
-          <blue>  0.8 </blue>
+          <red>   1.0 </red>
+          <green> 1.0 </green>
+          <blue>  1.0 </blue>
         </diffuse>
-
+ 
         <ambient>
-           <red>  1.0 </red>
+          <red>   1.0 </red>
           <green> 1.0 </green>
           <blue>  1.0 </blue>
         </ambient>
@@ -43,4 +43,3 @@
   </sim>
 
 </PropertyList>
-
