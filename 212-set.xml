@@ -7,7 +7,8 @@
     <description>Bell 212 "TwinHuey"</description>
     <author>BARANGER Emmanuel (FMD/3D), StuartC (Twin version), Heiko Schulz (3D/FDM), Simon Lister (3D), Maik Justus (FDM, sound)</author>
     <status>V0.5</status>W
-
+    <variant-of>uh1</variant-of>
+    
     <flight-model>yasim</flight-model>
     <aero>212-yasim</aero>
 
