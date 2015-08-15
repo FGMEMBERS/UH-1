@@ -10,7 +10,8 @@
 
     <flight-model>yasim</flight-model>
     <aero>412-yasim</aero>
-
+    <variant-of>uh1</variant-of>
+    
     <startup>
       <splash-texture>Aircraft/UH-1/Splash/412-splash.png</splash-texture>
     </startup>
@@ -53,4 +54,3 @@
   </nasal>
 
 </PropertyList>
-
